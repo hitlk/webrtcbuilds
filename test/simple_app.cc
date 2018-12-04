@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
       webrtc::CreateBuiltinAudioEncoderFactory(),
       webrtc::CreateBuiltinAudioDecoderFactory(),
       NULL,
-      NULL);
+      NULL, NULL, NULL);
 
   // something from api/test
   webrtc::FakeConstraints constraints;
