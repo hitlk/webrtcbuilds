@@ -271,7 +271,7 @@ function compile() {
   local target_cpu="$4"
   local configs="$5"
   local disable_iterator_debug="$6"
-  local common_args="is_component_build=false proprietary_codecs=true ffmpeg_branding=\"Chrome\" rtc_include_tests=false treat_warnings_as_errors=false"
+  local common_args="is_component_build=false proprietary_codecs=true ffmpeg_branding=\"Chrome\" rtc_include_tests=false treat_warnings_as_errors=false is_msan=true"
   local target_args="target_os=\"$target_os\" target_cpu=\"$target_cpu\""
 
   [ "$disable_iterator_debug" = 1 ] && common_args+=' enable_iterator_debugging=false'
